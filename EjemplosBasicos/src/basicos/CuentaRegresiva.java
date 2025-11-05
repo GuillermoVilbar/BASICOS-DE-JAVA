@@ -21,6 +21,7 @@ public class CuentaRegresiva {
 	}
 	System.out.println("0.");
 	
+	
 	System.out.println("Con un bucle Do While");
 	contadorDoWhile = n1;
 	do {
