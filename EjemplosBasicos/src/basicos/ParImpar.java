@@ -27,4 +27,4 @@ int num = entrada.nextInt();
 	
 	}
 
-}
+
