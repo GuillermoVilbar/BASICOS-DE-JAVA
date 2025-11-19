@@ -12,9 +12,10 @@ public class SiONo {
 			do {
 				System.out.println("Quieres Continuar? (s/n)");
 				opcion = entrada.nextLine();
+			    opcion=opcion.toLowerCase();
 			     
-			     
-			}while (!opcion.equals("s") );
+			}while (!(opcion.equals("s") || opcion.equals("n")));
+			System.out.println("Gracias, Hasta luego");
 	
 			
 			entrada.close();
