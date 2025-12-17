@@ -1,9 +1,30 @@
 package basicos;
-
 public class recursos {
 	public static int numAleatorio(int hasta) {
 		return((int)((Math.random()*hasta)+1));
 	}
+	
+	public static void rellenarArrayAleatorio (int[] arr, int max) {
+		for (int i=0; i<arr.length;i++) {
+			arr[i]=numAleatorio(max);
+		}
+	}
+	
+	public static void mostrarArray(int[] arr) {
+		for (int i=0; i< arr.length;i++) {
+			System.out.print(arr[i] + " ");	
+		}
+		System.out.println("");
+		
+	}
+	
+	public static void mostrarArray(String[] arr) {
+		for (int i=0; i< arr.length;i++) {
+			System.out.print(arr[i] + " ");	
+		}
+		
+	}
+	
 	
 	public static void mostrarMatriz (int[][] matriz) {
 		for(int i=0; i<matriz.length; i++) {
