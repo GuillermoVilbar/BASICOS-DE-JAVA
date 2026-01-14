@@ -6,12 +6,14 @@ public class Tamagotchi {
 	private int hambre;
 	private int energia;
 
-	public Tamagotchi (String nombre, int hambre, int energia) {
+	public Tamagotchi (String nombre) {
 		this.nombre=nombre;
-		this.hambre=hambre;
-		this.energia=energia;
+		this.hambre=0;
+		this.energia=100;
 	}
-	public void estadoTamagotchi() {
+	
+	
+	public void estado() {
 		System.out.println(nombre + " tiene " + hambre + " de hambre " + " y " + energia + " de energia " );
 	
 	}
@@ -38,7 +40,9 @@ public class Tamagotchi {
 		}
 	}
 
-
+public void saludar() {
+	System.out.println("Soy " + this.nombre + " encantado de conocerte, que hacemos ahora");
+}
 
 }
 
