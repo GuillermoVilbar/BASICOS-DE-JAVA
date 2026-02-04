@@ -3,6 +3,7 @@ package basicos;
 import java.util.Arrays;
 
 public class ArrayInvertido {
+	
 
 	public static void main(String[] args) {
 		String[] original  = {"Hola","me","van","a","dar","la","vuelta"};
