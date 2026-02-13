@@ -3,18 +3,33 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class AppGestionMatriculas {
 
+	
+	
+	
+	public static void mostrarEstudiantes(ArrayList<Estudiante> estus) {
+		for(Estudiante e: estus) {
+			System.out.println(e.getNumMatricula()+" " + e.getNombre());
+		}
+		}
+		
 	public static void main(String[] args) {
-		Scanner entrada Scanner = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
+		
+		ArrayList<Materia> materias = new ArrayList<>();
+		ArrayList<Estudiante> estudiantes = new ArrayList<>();
 do {
 			
 			System.out.println("¿Qué te gustaría hacer?");
 			System.out.println("1-Añadir una materia");
 			System.out.println("2-añadir un estudiante");
-			System.out.println("3-Mostrar el listado de personas");
-			System.out.println("4-Salir");
+			System.out.println("3-Matricular a un estudiante");
+			System.out.println("4-Listar las materias");
+			System.out.println("5-Listar los estudiante");
+			System.out.println("6-Ver numero total de matriculados");
+			System.out.println("7-Salir");
 			
 			System.out.println("¿qué eliges?");
-			opcion=entrada.nextInt();
+			int opcion =entrada.nextInt();
 			entrada.nextLine();
 
 			switch (opcion) {
@@ -36,7 +51,7 @@ do {
 
 
 			
-		}while(opcion!=4); 
+		}while(opcion!=7); 
 
 	}
 
