@@ -2,25 +2,21 @@ package tresEnRaya;
 
 import java.util.Scanner;
 
-public class TresEnRaya {
-	private Tablero tablero;
-	private Jugador j1, j2;
-	private Jugador jugadorActivo;
+public class TresEnRaya extends juegoDeTablero {
+
+	
 	
 	public TresEnRaya(String nombre1, char ficha1, String nombre2, char ficha2) {
-		this.tablero = new Tablero();
-		this.j1 = new Jugador (nombre1, ficha1);
-		this.j2 = new Jugador (nombre2, ficha2);
-		this.jugadorActivo = j1;
+		super(nombre1, ficha1, nombre2, ficha2);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	public void inicio() {
 		Scanner sc = new Scanner(System.in);
 		boolean finPartida=false;
 		
 		while (!finPartida) {
-			tablero.mostrar();
-			System.out.println("\nTurno de " + jugadorActivo.getNombre() + " (" + jugadorActivo.getFicha()+")");
+			
 			
 			boolean fichaColocada=false;
 			while (!fichaColocada) {

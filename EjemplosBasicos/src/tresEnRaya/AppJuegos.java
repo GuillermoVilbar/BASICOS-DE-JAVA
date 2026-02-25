@@ -17,7 +17,7 @@ public class AppJuegos {
 			eleccion=sc.nextInt();
 			
 		
-		}while(eleccion!=0);
+		
 		
 		switch(eleccion) {
 		case 1:
@@ -30,8 +30,9 @@ public class AppJuegos {
 			break;
 		case 0:
 			System.out.println("Vuelve pronto!");
+			
 		}
-		
+		}while(eleccion!=0);
 		
 
 	}
