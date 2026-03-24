@@ -13,10 +13,15 @@ public class PruebaFechas  {
 	LocalDate fechaNacimiento = LocalDate.of(2002, 12, 16);
 
 Locale idioma = Locale.forLanguageTag("es");
+System.out.println("Dia" + fechaNacimiento.getDayOfMonth());
+System.out.println("Mes" + fechaNacimiento.getMonthValue());
+
+System.out.println("Año" + fechaNacimiento.getYear());
 System.out.println("Mes:" + fechaNacimiento.getMonth().getDisplayName(TextStyle.FULL, idioma).toUpperCase());
  	
 
-System.out.println("Dia" + fechaNacimiento.getDayOfMonth());
+System.out.println("Uno:" + fechaNacimiento.getDayOfWeek().getDisplayName(TextStyle.FULL, idioma).toUpperCase());
+
 	}
 	
 }
