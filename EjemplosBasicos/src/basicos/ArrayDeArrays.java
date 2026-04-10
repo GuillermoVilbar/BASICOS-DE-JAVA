@@ -11,7 +11,7 @@ public class ArrayDeArrays {
 
 		for(int i=0 ; i < numero.length;i++) {
 			for(int j=0;j<numero[0].length;j++) {
-				numero[i][j] = (int) Math.powExact(i+1, j+1);
+				numero[i][j] = (int) Math.pow(i+1, j+1);
 				System.out.print(numero[i][j] + " | ");
 
 			}
