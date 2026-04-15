@@ -1,10 +1,20 @@
 package validacionArchivosMultimediaEnfoque1;
 
-public class VideoMp4 {
+public class VideoMp4 extends Video{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public VideoMp4(int length) {
+		super(length);
+		
 	}
 
+	@Override
+	public boolean isValid() {
+		if(this.getLength() < 300) {
+			return true;
+		}
+		return false;
+	}
+
+	
+	
 }

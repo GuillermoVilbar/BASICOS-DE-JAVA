@@ -1,10 +1,23 @@
 package validacionArchivosMultimediaEnfoque1;
 
-public class DocumentoPDF {
+public class DocumentoPDF extends Documento  {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	public DocumentoPDF(long size) {
+		super(size);
+		
 	}
+
+	@Override
+	public boolean isValid() {
+		if (this.getSize() <1048576) {
+			return true;
+		}
+		return false;
+	}
+
+	
+
+	
 
 }

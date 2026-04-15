@@ -1,10 +1,16 @@
 package validacionArchivosMultimediaEnfoque1;
 
-public class ImagenJPG {
+public class ImagenJPG extends Imagen{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public ImagenJPG(int width, int height) {
+		super(width, height);
 	}
 
+	@Override
+	public boolean isValid() {
+		if( this.getHeight()*this.getWidth() < 5000000) {
+			return true;
+		}
+		return false;
+	}
 }

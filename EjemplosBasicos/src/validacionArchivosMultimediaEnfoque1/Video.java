@@ -1,10 +1,23 @@
 package validacionArchivosMultimediaEnfoque1;
 
-public class Video {
+public abstract class Video implements Validable {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+private int length;
 
-	}
+public Video(int length) {
+	super();
+	this.length = length;
+}
+
+public int getLength() {
+	return length;
+}
+
+@Override
+public String toString() {
+	return "Video [length=" + length + "]";
+}
+
+
 
 }

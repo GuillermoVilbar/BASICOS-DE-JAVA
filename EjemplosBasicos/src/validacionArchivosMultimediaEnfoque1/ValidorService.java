@@ -2,9 +2,13 @@ package validacionArchivosMultimediaEnfoque1;
 
 public class ValidorService {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private Validable[] ficheros;
 
+	public ValidorService(Validable[] ficheros) {
+		super();
+		this.ficheros = ficheros;
 	}
 
+
+	
 }
